@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    'hd hd hd'
+    'ig ig ig'
+    'fo fo fo';
+    background: rgb(188, 241, 188);
+}
+
+header {
+    grid-area: hd;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 1px;
+}
+
+#innergrid {
+    display: grid;
+    grid-area: ig;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas: 
+    'ar1 ar2 ar3'
+    'ar4 ar4 ar4';
+    row-gap: 20px;
+    column-gap: 20px;
+    
+   
+}
+
+#article1 {
+    grid-area: ar1;
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+}
+
+#article2 {
+    grid-area: ar2;
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+}
+
+#article3 {
+    grid-area: ar3;
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+}
+
+#article4 {
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-area: ar4;
+    background-color: lavenderblush;
+    border-style: solid;
+    border-color: purple;
+    border-width: 1px;
+}
+
+footer {
+    grid-area: fo;
+    background-color: lightpink;
+    border-style: solid;
+    border-color: palevioletred;
+    border-width: 1px;
+}
